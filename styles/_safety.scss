@@ -1,0 +1,124 @@
+/* safety */
+
+.safety {
+	margin-top: 160px;
+}
+
+.safety__content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	.safety__header {
+		margin-bottom: 32px;
+		font-size: 34px;
+		line-height: 41px;
+		color: $color-header;
+	}
+	.safety__text {
+		margin: 0 auto;
+		max-width: 65%;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: 0.8px;
+	}
+}
+
+.safety__list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 64px;
+	.safety__item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 45px 51px;
+		flex-basis: 31.33%;
+		text-align: center;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+		border-radius: 18px;
+		transition: background-color ease-in .3s;
+		&:hover {
+			background-color:  rgba(0, 0, 0, 0.7);
+		}
+		& img {
+			height: 100px;
+			width: 100px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: -0.5px;
+			bottom: -0.5px;
+			left: -0.5px;
+			right: -0.5px;
+			background: linear-gradient(119deg, #0fae96 -8%, #120E27 47%,  #7dcfe9 141%);
+			border-radius: 18px;
+			z-index: -1;
+		}
+		.safety-header__item {
+			margin-top: 16px;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 29px;
+			color: $color-header;
+		}
+	}
+}
+
+@media (max-width:992px) {
+	.safety {
+		margin-top: 96px;
+	}
+	.safety__content {
+		.safety__header {
+			font-size: 21px;
+			line-height: 25px;
+		}
+		.safety__text {
+			max-width: 100%;
+			font-size: 17px;
+			line-height: 21px;
+		}
+	}
+	.safety__list {
+		margin-top: 32px;
+		flex-direction: column;
+		.safety__item {
+			padding: 30px 30px;
+			flex-direction: row;
+			& img {
+				height: 80px;
+				width: 80px;
+			}
+			.safety-header__item {
+				margin-top: 0;
+				margin-left: 16px;
+				font-size: 17px;
+				line-height: 21px;
+			}
+			&:not(:last-child) {
+				margin-bottom: 16px;
+			}
+		}
+	}
+}
+
+@media (max-width:600px) {
+	.safety__list {
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 345px;
+		.safety__item {
+			padding: 15px 16px;
+			width: 100%;
+			text-align: left;
+		}
+		.safety__item img {
+			width: 60px;
+			height: 60px;
+		}
+	} 
+}

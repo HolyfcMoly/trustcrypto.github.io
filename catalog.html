@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trystcrypto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__left">
+                    <svg width="39" height="44" viewBox="0 0 39 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_885_3258)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 21.0205L1.55218 23.0107L5.62169 28.2282V12.782H0V21.0205Z" fill="#ECF1F0" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 9.06136H5.62169V6.0104H11.2429V35.4354L17.9233 44V0H0V9.06136Z" fill="#ECF1F0" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.0771 0V43.9996L27.7575 35.4345V6.0104H33.3783V9.06136H39V0H21.0771Z"
+                                fill="#ECF1F0" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M33.3784 28.2282L37.4479 23.0107L39.0001 21.0205V12.782H33.3784V28.2282Z"
+                                fill="#ECF1F0" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_885_3258">
+                                <rect width="39" height="44" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="logo-header">Trustcrypt</div>
+                </div>
+                <div class="nav__right">
+                    <div class="nav-right__wrapper">
+                        <ul class="nav-right__list">
+                            <li class="nav-right__item"><a href="index.html" class="nav-right__link">Главная</a></li>
+                            <li class="nav-right__item nav-right__item--active"><a href="catalog.html" class="nav-right__link">Продукты</a></li>
+                            <li class="nav-right__item"><a href="blog.html" class="nav-right__link">Блог</a></li>
+                            <li class="nav-right__item"><a href="index.html#contact" class="nav-right__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-right__dropdown dropdown__menu" id="dropdown__menu">
+                        <span class="dropdown__title">RU</span>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__item"><a href="#">RU</a></li>
+                            <li class="dropdown__item"><a href="#">EN</a></li>
+                            <li class="dropdown__item"><a href="#">AE</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-right__icon-wrapper">
+                        <ul class="nav-right__list-icon">
+                            <li class="nav-right__item-icon">
+                                <a href="" class="nav-right__link-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM17.568 8.16C17.388 10.056 16.608 14.664 16.212 16.788C16.044 17.688 15.708 17.988 15.396 18.024C14.7 18.084 14.172 17.568 13.5 17.124C12.444 16.428 11.844 15.996 10.824 15.324C9.636 14.544 10.404 14.112 11.088 13.416C11.268 13.236 14.34 10.44 14.4 10.188C14.4083 10.1498 14.4072 10.1102 14.3968 10.0726C14.3863 10.0349 14.3668 10.0004 14.34 9.972C14.268 9.912 14.172 9.936 14.088 9.948C13.98 9.972 12.3 11.088 9.024 13.296C8.544 13.62 8.112 13.788 7.728 13.776C7.296 13.764 6.48 13.536 5.868 13.332C5.112 13.092 4.524 12.96 4.572 12.54C4.596 12.324 4.896 12.108 5.46 11.88C8.964 10.356 11.292 9.348 12.456 8.868C15.792 7.476 16.476 7.236 16.932 7.236C17.028 7.236 17.256 7.26 17.4 7.38C17.52 7.476 17.556 7.608 17.568 7.704C17.556 7.776 17.58 7.992 17.568 8.16V8.16Z"
+                                            fill="#ECF1F0" />
+                                    </svg></a>
+                            </li>
+                            <li class="nav-right__item-icon">
+                                <a href="" class="nav-right__link-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 0C5.3725 0 0 5.3725 0 12C0 18.6275 5.3725 24 12 24C18.6275 24 24 18.6275 24 12C24 5.3725 18.6275 0 12 0ZM16.8813 9.83C16.8862 9.9325 16.8875 10.035 16.8875 10.135C16.8875 13.26 14.5113 16.8612 10.1638 16.8612C8.87912 16.8634 7.62121 16.4944 6.54125 15.7987C6.725 15.8212 6.91375 15.83 7.105 15.83C8.2125 15.83 9.23125 15.4538 10.04 14.8188C9.54715 14.8091 9.06959 14.6459 8.67389 14.3519C8.27819 14.0579 7.98406 13.6478 7.8325 13.1788C8.18644 13.2461 8.55106 13.2319 8.89875 13.1375C8.36381 13.0293 7.88275 12.7395 7.53714 12.3171C7.19152 11.8947 7.00263 11.3658 7.0025 10.82V10.7913C7.32125 10.9675 7.68625 11.075 8.07375 11.0875C7.57225 10.7537 7.21723 10.2408 7.08131 9.65392C6.94538 9.06699 7.03881 8.45032 7.3425 7.93C7.93619 8.66 8.67658 9.25718 9.51571 9.68289C10.3548 10.1086 11.274 10.3533 12.2137 10.4012C12.0943 9.89414 12.1457 9.36176 12.36 8.88688C12.5743 8.412 12.9395 8.02124 13.3988 7.77533C13.8582 7.52942 14.3858 7.44215 14.8999 7.52709C15.4139 7.61203 15.8855 7.86441 16.2412 8.245C16.7702 8.14034 17.2775 7.94632 17.7413 7.67125C17.565 8.21892 17.1958 8.68397 16.7025 8.98C17.1711 8.92356 17.6286 8.7976 18.06 8.60625C17.7431 9.08112 17.3439 9.49555 16.8813 9.83Z"
+                                            fill="#ECF1F0" />
+                                    </svg></a>
+                            </li>
+                            <li class="nav-right__item-icon">
+                                <a href="" class="nav-right__link-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.0037 11.7913L11.1963 10.4813C10.9513 10.3675 10.75 10.495 10.75 10.7662V13.2338C10.75 13.505 10.9513 13.6325 11.1963 13.5188L14.0025 12.2087C14.2488 12.0938 14.2487 11.9063 14.0037 11.7913ZM12 0C5.3725 0 0 5.3725 0 12C0 18.6275 5.3725 24 12 24C18.6275 24 24 18.6275 24 12C24 5.3725 18.6275 0 12 0ZM12 16.875C5.8575 16.875 5.75 16.3213 5.75 12C5.75 7.67875 5.8575 7.125 12 7.125C18.1425 7.125 18.25 7.67875 18.25 12C18.25 16.3213 18.1425 16.875 12 16.875Z"
+                                            fill="#ECF1F0" />
+                                    </svg></a>
+                            </li>
+                            <li class="nav-right__item-icon">
+                                <a href="" class="nav-right__link-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.415 14.382C17.117 14.233 15.656 13.515 15.384 13.415C15.112 13.316 14.914 13.267 14.715 13.565C14.517 13.861 13.948 14.531 13.775 14.729C13.601 14.928 13.428 14.952 13.131 14.804C12.834 14.654 11.876 14.341 10.741 13.329C9.858 12.541 9.261 11.568 9.088 11.27C8.915 10.973 9.069 10.812 9.218 10.664C9.352 10.531 9.515 10.317 9.664 10.144C9.813 9.97004 9.862 9.84604 9.961 9.64704C10.061 9.44904 10.011 9.27604 9.936 9.12704C9.862 8.97804 9.268 7.51504 9.02 6.92004C8.779 6.34104 8.534 6.42004 8.352 6.41004C8.178 6.40204 7.98 6.40004 7.782 6.40004C7.584 6.40004 7.262 6.47404 6.99 6.77204C6.717 7.06904 5.95 7.78804 5.95 9.25104C5.95 10.713 7.014 12.126 7.163 12.325C7.312 12.523 9.258 15.525 12.239 16.812C12.949 17.118 13.502 17.301 13.933 17.437C14.645 17.664 15.293 17.632 15.805 17.555C16.375 17.47 17.563 16.836 17.811 16.142C18.058 15.448 18.058 14.853 17.984 14.729C17.91 14.605 17.712 14.531 17.414 14.382H17.415ZM11.993 21.785H11.989C10.2184 21.7854 8.48037 21.3094 6.957 20.407L6.597 20.193L2.855 21.175L3.854 17.527L3.619 17.153C2.62914 15.5774 2.10529 13.7538 2.108 11.893C2.11 6.44304 6.544 2.00904 11.997 2.00904C14.637 2.00904 17.119 3.03904 18.985 4.90704C19.9054 5.82362 20.6349 6.91361 21.1313 8.11394C21.6277 9.31427 21.8811 10.6011 21.877 11.9C21.875 17.35 17.441 21.785 11.993 21.785ZM20.405 3.48804C19.3032 2.37896 17.9922 1.49958 16.5481 0.900841C15.1039 0.302105 13.5553 -0.00407625 11.992 4.09775e-05C5.438 4.09775e-05 0.102 5.33504 0.1 11.892C0.096963 13.9788 0.644374 16.0294 1.687 17.837L0 24L6.304 22.346C8.04787 23.2962 10.0021 23.794 11.988 23.794H11.993C18.547 23.794 23.883 18.459 23.885 11.901C23.8898 10.3383 23.5848 8.79014 22.9874 7.34607C22.3901 5.90201 21.5124 4.59071 20.405 3.48804Z"
+                                            fill="#ECF1F0" />
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="burger__menu" id="burger">
+                        <span class="burger__stick"></span>
+                        <span class="burger__stick"></span>
+                        <span class="burger__stick"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="hero hero__catalog">
+        <div class="container hero__catalog-container">
+            <div class="hero__top">
+                <h1 class="hero-top_header header">Наши продукты</h1>
+                <p class="hero-top__text">Мы придерживаемся в своей работе простого принципа: детектировать и
+                    блокировать любую вредоносную атаку.</p>
+            </div>
+            <ul class="tabs">
+                <li class="tabs__item">
+                    <button class="tabs__item-btn tabs__item--active" data-path="all">
+                        Все продукты
+                    </button>
+                </li>
+                <li class="tabs__item">
+                    <button class="tabs__item-btn" data-path="one">
+                        1 категория
+                    </button>
+                </li>
+                <li class="tabs__item">
+                    <button class="tabs__item-btn" data-path="two">
+                        2 категория
+                    </button>
+                </li>
+                <li class="tabs__item">
+                    <button class="tabs__item-btn" data-path="three">
+                        3 категория
+                    </button>
+                </li>
+            </ul>
+            <ul class="hero__catalog--grid">
+                <li class="card__product card__product--visible" data-target="one">
+                    <div class="card__swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <h2 class="card__header">Название продукта</h2>
+                    <p class="card__descr">Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...</p>
+                    <a class="card__btn" href="product.html">Подробнее</a>
+                </li>
+                <li class="card__product card__product--visible" data-target="two">
+                    <div class="card__swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <h2 class="card__header">Название продукта</h2>
+                    <p class="card__descr">Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...</p>
+                    <a class="card__btn" href="product.html">Подробнее</a>
+                </li>
+                <li class="card__product card__product--visible" data-target="two">
+                    <div class="card__swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <h2 class="card__header">Название продукта</h2>
+                    <p class="card__descr">Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...</p>
+                    <a class="card__btn" href="product.html">Подробнее</a>
+                </li>
+                <li class="card__product card__product--visible" data-target="two">
+                    <div class="card__swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <h2 class="card__header">Название продукта</h2>
+                    <p class="card__descr">Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...</p>
+                    <a class="card__btn" href="product.html">Подробнее</a>
+                </li>
+                <li class="card__product card__product--visible" data-target="three">
+                    <div class="card__swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <h2 class="card__header">Название продукта</h2>
+                    <p class="card__descr">Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...</p>
+                    <a class="card__btn" href="product.html">Подробнее</a>
+                </li>
+                <li class="card__product card__product--visible" data-target="three">
+                    <div class="card__swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="img/product-ul.png"
+                                    alt="Продукт"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <h2 class="card__header">Название продукта</h2>
+                    <p class="card__descr">Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...</p>
+                    <a class="card__btn" href="product.html">Подробнее</a>
+                </li>
+            </ul>
+            <ul class="pagination__list">
+                <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="copyrights">© 2022 LLC Trustcrypt. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

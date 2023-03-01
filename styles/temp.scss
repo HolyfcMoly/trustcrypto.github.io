@@ -1,0 +1,9 @@
+.nav-right__item--active {
+    .nav-right__link {
+        color: #0fae96;
+        &::after {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}
