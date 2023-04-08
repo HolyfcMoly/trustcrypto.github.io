@@ -1,0 +1,7 @@
+.nav-right__item--active .nav-right__link {
+  color: #0fae96;
+}
+.nav-right__item--active .nav-right__link::after {
+  width: 100%;
+  opacity: 1;
+}/*# sourceMappingURL=temp.css.map */

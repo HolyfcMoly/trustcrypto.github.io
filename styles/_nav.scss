@@ -1,0 +1,242 @@
+/* header */
+@import "../components/burger";
+@import "../components/dropdown";
+
+.nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.nav__left {
+	display: flex;
+	align-items: center;
+	.logo-header {
+		margin-left: 16px;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: 0.59px;
+		color: $color-header;
+	}
+}
+
+.nav__right {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 0 0 52%;
+	& div:not(:last-child) {
+		margin-right: 10px;
+	}
+	div:nth-child(3) {
+		margin: 0;
+	}
+}
+.nav-right__wrapper {
+	margin-left: -46px;
+	padding-top: 6px;
+	.nav-right__list {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.nav-right__item {
+	position: relative;
+	&:not(:last-child) {
+		margin-right: 34px;
+	}
+	.nav-right__link {
+		font-size: 17px;
+		line-height: 21px;
+		color: $color-header;
+		transition: color ease-in-out .3s;
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -27px;
+			height: 3px;
+			width: 0;
+			background-color: #0fae96;
+			opacity: 0;
+			transition: width ease-in-out .3s;
+		}
+		&:hover {
+			color: #0fae96;
+		}
+		&:hover::after {
+			width: 100%;
+			opacity: 1;
+		}
+		&:active {
+			color: #027463;
+		}
+		&:active:after {
+			width: 100%;
+			background-color: #027463;
+		}
+	}
+}
+
+
+.nav-right__list-icon {
+	display: flex;
+	padding-top: 12px;
+	.nav-right__item-icon {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+		.nav-right__link-icon {
+			& svg path {
+			transition: all ease-in-out .3s;
+			}
+			&:hover svg path {
+				fill: #0fae96;
+			}
+			&:active svg path {
+				fill: #027463;
+			}
+		}
+	}
+}
+
+
+@media (max-width:992px) {
+	.nav__right {
+		flex: none;
+	}
+	.nav__right div:not(:last-child) {
+		margin: 0;
+	}
+	.burger__menu {
+			display: block;
+			margin-left: 28px;
+            z-index: 2;
+	}
+	.nav__right.open .burger__stick:nth-child(1) {
+		transform: translateY(0) rotate(-45deg);
+	}
+	.nav__right.open .burger__stick:nth-child(2) {
+		width: 0;
+	}
+	.nav__right.open .burger__stick:nth-child(3) {
+		transform: translateY(0) rotate(45deg);
+	}
+	.nav-right__wrapper, .nav-right__icon-wrapper {
+		position: absolute;
+		top: -300px;
+		right: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		background: rgba(0, 0, 0, 0.1);
+		transition: top 0.5s;
+		z-index: 10;
+	}
+	.nav-right__icon-wrapper {
+		top: -300px;
+		background-color: transparent;
+		box-shadow: none;
+		opacity: 0;
+		transition: top 0.5s, opacity 1.5s;
+		.nav-right__list-icon {
+			padding-top: 10px;
+			justify-content: center;
+		}
+	}
+	.nav-right__wrapper {
+		height: 223px;
+		box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
+		backdrop-filter: blur(50px);
+		.nav-right__list {
+			display: block;
+		}
+	}
+	.nav__right.open .nav-right__wrapper {
+		top: 83px;
+	}
+	.nav__right.open .nav-right__icon-wrapper {
+		top: 263px;
+		opacity: 1;
+	}
+	.nav-right__item:not(:last-child) {
+		margin: 0;
+	}
+	.nav-right__item {
+		.nav-right__link {
+			display: block;
+			padding: 12px 14px;
+			&:hover {
+				background-color: #0FAE96;
+				color: $color-header;
+			}
+			&::after {
+				display: none;
+			}
+		}
+	}
+	
+}
+
+@media (max-width:600px) {
+	.nav {
+		padding: 16px 0;
+	}
+	.nav__left {
+		& svg {
+			width: 25px;
+			height: 28px;
+		}
+		.logo-header {
+			font-size: 16px;
+			line-height: 19px;
+		}
+	} 
+	.nav-right__wrapper {
+		height: 207px;
+	}
+	.nav__right.open {
+		.nav-right__icon-wrapper {
+			top: 248px;
+		}
+
+	} 
+	.nav-right__item {
+		.nav-right__link {
+			font-size: 14px;
+			line-height: 17px;
+		}
+	} 
+	.nav-right__link-icon svg {
+		width: 20px;
+		height: 20px;
+	}
+	.nav-right__list-icon {
+		.nav-right__item-icon:not(:last-child) {
+			margin-right: 9px;
+		}
+
+	} 
+	.dropdown__menu {
+		padding: 4px 4px 4px 15px;
+	}
+	.burger__menu {
+		margin-left: 22px;
+		width: 20px;
+		height: 28px;
+		.burger__stick {
+			width: 19px;
+			height: 2px;
+			&:nth-child(1) {
+				transform: translateY(-7px);
+			}
+			&:nth-child(3) {
+				transform: translateY(7px);
+			}
+		}
+	}
+}

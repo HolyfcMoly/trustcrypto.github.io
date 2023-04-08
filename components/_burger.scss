@@ -1,0 +1,22 @@
+.burger__menu {
+	position: relative;
+	display: none;
+	width: 33px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+	.burger__stick {
+		position: absolute;
+		right: 0;
+		width: 30px;
+		height: 3px;
+		background-color: #ffffff;
+		transition: transform .5s, width .5s;
+		&:nth-child(1) {
+            transform: translateY(-10px);
+        }
+        &:nth-child(3) {
+            transform: translateY(10px)
+        }
+	}
+}

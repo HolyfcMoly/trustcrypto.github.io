@@ -1,0 +1,114 @@
+.hero__catalog--grid-secondary {
+    .card__product {
+        .card__descr {
+            margin-bottom: 0;
+            -webkit-line-clamp: 3;
+        }
+    } 
+}
+.card__blog--grid {
+    position: relative;
+    transition: transform ease-in-out 0.5s;
+    &:hover {
+        transform: scale(1.06);
+    }
+}
+
+.hero__catalog-container {
+    .tabs {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.07) transparent;
+        &::-webkit-scrollbar {
+            height: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.07); 
+            border-radius: 20px;
+        }
+    }
+}
+
+
+.card {
+    &__blog--link {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        color: $color-header;
+        background: #0FAE96;
+        border-radius: 60px;
+        transition: background-color ease-in-out .3s;
+        & svg {
+            margin-right: 8px;
+        }
+        &:hover {
+            color: $color-hover;
+            background: $bgc-hover;
+        }
+        &:active {
+            color: $color-active;
+            background: $bgc-active;
+        }
+    }
+    &__blog--visits, &__blog--date {
+        position: absolute;
+        bottom: 19px;
+        display: flex;
+        align-items: center;
+        padding: 7px 12px;
+        font-size: 12px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 0.5px solid rgba(255, 255, 255, 0.1);
+        border-radius: 100px;
+        backdrop-filter: blur(50px);
+        & svg {
+            margin-right: 5px;
+        }
+    }
+    &__blog--visits {
+        left: 16px;
+        line-height: 15px;
+    }
+    &__blog--date {
+        left: 94px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        &__blog--visits, &__blog--date {
+            padding: 5px 8px;
+            font-size: 8px;
+            line-height: 10px;
+            & svg {
+                width: 14px;
+                height: 14px;
+            }
+        }
+        &__blog--date {
+            left: 77px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        &__blog--link {
+            padding: 5px 12px;
+            font-size: 8px;
+            line-height: 10px;
+            & svg {
+                margin-right: 4px;
+                height: 12%;
+                width: 18%;
+            }
+        }
+    }
+}
