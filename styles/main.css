@@ -1181,6 +1181,7 @@ input:checked + .form__slider {
 
 .card__product {
   display: none;
+  grid-column: 4 span;
   padding: 16px;
   max-width: 412px;
   background-color: rgba(255, 255, 255, 0.02);
@@ -1903,6 +1904,7 @@ input:checked + .form__slider {
 .hero__product--similar .card__product {
   position: relative;
   display: flex;
+  grid-column: 0;
   max-width: 89%;
   padding: 0;
   background-color: transparent;
