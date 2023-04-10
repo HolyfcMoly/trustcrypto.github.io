@@ -198,7 +198,7 @@
         .card__product {
             position: relative;
             display: flex;
-            grid-column: 0;
+            grid-column: auto;
             max-width: 89%;
             padding: 0;
             background-color: transparent;
